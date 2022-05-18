@@ -1,0 +1,35 @@
+Usar la librería de gsampallo serial2sql
+
+Emplear XAMPP y phpmyadmin y configurar el archivo config de la librería ajustando los datos necesarios como sigue:
+
+{
+    "port":"COM9",
+    "baudrate": 115200,
+    "credentials" : {
+    "host":"localhost",
+    "database":"data",
+    "user":"root",
+    "password":"websdinamicas",
+    "raise_on_warnings": "True"
+    },
+    "tableName": "datafromserial",
+    "fields": [
+        { "name":"Fallo","type":"VARCHAR(2)" },
+        { "name":"Numero","type":"INT(1)" },
+        { "name":"Lote","type":"VARCHAR(10)" },
+	{ "name":"borrar","type":"VARCHAR(15)" }
+    ]
+}
+
+Cargado el programa en simbolos de sistema buscar el dirctorio de la librería
+
+CD C:\Users\Carlos Cerdán\Documents\ETSII\Master\Ingenia\serial2sql-master
+
+introducir los comandos:
+
+pip install mysql-connector-python
+pip install pySerial
+
+python serial2sql.py
+
+control C //para parar
