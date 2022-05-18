@@ -1,0 +1,12 @@
+Este trabajo forma parte de una asignatura llamada Ingenia Diseño de Sistemas Inteligentes 
+con Robots y AGV del máster habilitante de ingeniero industrial de la UPM.
+
+Objetivo:
+Diseño e implementación de una operación de fabricación colaborativa, en nuestro caso el 
+diseñar el proceso del trabajo colaborativo entre un trabajador, un AGV (MIR 100) y un COBOT. 
+
+A través de una botonera un trabajador pordrá llamar al AGV, depositar las piezas con fallos
+en él además de registrar las piezas y el tipo de error en una base de datos. Enviarlo a la base 
+del COBOT donde deberán comunicarse y recoger las piezas introducidas a través de una pinza 
+desarrollada por el equipo, y depositarlas en la mesa de trabajo donde otro trabajador se 
+encargaría en solucionar sus defectos.
