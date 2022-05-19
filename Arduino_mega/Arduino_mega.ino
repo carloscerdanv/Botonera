@@ -111,6 +111,7 @@ void loop() {
     switch(Estado){
       case 0: 
         digitalWrite(36, HIGH);
+        digitalWrite(37, LOW);
       lcd.clear();      //Limpio pantalla
       lcd.setCursor (0,0);  //segunda columna seguna fila
  lcd.print("     AGV EN");
@@ -120,6 +121,7 @@ void loop() {
           break;
       case 1: 
         digitalWrite(36,LOW);
+        digitalWrite(37, LOW);
         llamada();
         break;
       case 2: 
@@ -128,6 +130,7 @@ void loop() {
         break;
       case 3:
         digitalWrite(36, HIGH);
+        digitalWrite(37, LOW);
         /*if (b1.wasPressed()) {
           digitalWrite(46, HIGH);
           digitalWrite(36,LOW);
@@ -136,10 +139,12 @@ void loop() {
           break;
       case 4: 
         digitalWrite(36,LOW);
+        digitalWrite(37, LOW);
         cobot();
         break;
       case 5:
         digitalWrite(36, HIGH);
+        digitalWrite(37, LOW);
         /*if (b1.wasPressed()) {
           digitalWrite(46, HIGH);
           digitalWrite(36,LOW);
@@ -178,7 +183,6 @@ void llamada(){
     digitalWrite(46, LOW);
     //do{} while(Estado !=2);
     //CNC();
-
     return;
 }
 
